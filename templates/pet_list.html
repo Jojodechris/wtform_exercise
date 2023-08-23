@@ -1,0 +1,22 @@
+<!-- pet_list.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet list</title>
+</head>
+<body>
+
+
+    <h1>Welcome to pet Adoption</h1>
+  <ul>
+    {% for pet in pets %}
+    <li><a href="{pet.id}}">{{pet.name}}</li>
+    <!-- <img src="{{pet.photo_url}}" alt="Description of the image"> -->
+    {% endfor %}
+  </ul>
+<button type="submit"><a href="/add">Add pet</button>
+</body>
+</html>
