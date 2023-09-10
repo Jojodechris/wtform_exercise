@@ -49,7 +49,7 @@ def add_new_pet():
     
         name = form.name.data
         photo_url = form.photo_url.data
-        age = form.age.data
+        age = form.ages.data
         notes = form.notes.data
         species= form.species.data
         available = form.available.data
